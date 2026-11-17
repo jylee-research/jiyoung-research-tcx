@@ -62,6 +62,20 @@ h3{color:var(--head);font-size:20px;font-weight:700;margin-bottom:6px}
 .flow{margin-top:24px;display:grid;gap:12px}
 .flow .card h3{font-size:18px}
 .note{margin-top:16px;font-size:14px;color:var(--sub)}
+figure.viz{margin-top:24px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
+figure.viz figcaption{font-size:14px;color:var(--sub);margin-top:14px;line-height:1.5}
+.viz-title{font-size:15px;font-weight:700;color:var(--head);margin-bottom:14px}
+.shots{display:grid;grid-template-columns:240px 1fr;gap:28px;align-items:center;margin-bottom:20px}
+.phone{border:8px solid #191f28;border-radius:28px;overflow:hidden;background:#f4f6fa}
+.phone img{display:block;width:100%;height:auto}
+.shot-text h3{font-size:19px}
+.shot-text p{font-size:15px;margin-top:8px}
+.shot-text ul{font-size:15px;padding-left:18px;margin-top:8px}
+.shot-text li + li{margin-top:2px}
+.shot-cap{font-size:13px;color:var(--sub);margin-top:8px;line-height:1.5}
+.flowimg{display:block;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.flowimg img{display:block;width:100%;height:auto}
+@media (max-width:640px){.shots{grid-template-columns:1fr}.phone{max-width:240px;margin:0 auto}}
 footer{border-top:1px solid var(--line);padding:40px 0 64px;font-size:14px;color:var(--sub)}
 footer p + p{margin-top:6px}
 footer .contact{font-size:16px;color:var(--head);margin-bottom:16px}
@@ -141,6 +155,25 @@ footer .contact{font-size:16px;color:var(--head);margin-bottom:16px}
       <div class="card"><h3>VOC를 전사가 보게</h3><div class="num">뉴스레터 열람률 72%</div><p>VOC 뉴스레터의 포맷을 정하고 핵심 이슈 중심으로 큐레이션해, 열람률을 63%에서 72%까지 올렸어요.</p></div>
       <div class="card"><h3>고객 곁에서</h3><div class="num">보이스피싱 피해 고객 응대</div><p>원치 않는 대출을 받은 고객에게 절차를 안내하고 도울 방법을 함께 찾았어요. 다음 날 고객이 문제가 해결됐다며 감사를 전했고, 사내에서 공개 칭찬을 받았어요.</p></div>
     </div>
+    <figure class="viz" aria-label="실제 배포된 시작 팝업 화면과 설문 흐름">
+      <p class="viz-title">화면으로 옮긴 예: 떠나려는 고객에게 먼저 묻는 설문 배너</p>
+      <div class="shots">
+        <div class="phone"><img src="img/banner_popup.webp" width="462" height="820" alt="대출 조회 전, 확인하고 싶은 정보가 있으신가요? 라고 묻는 시작 팝업과 확인해보기 버튼" loading="lazy"></div>
+        <div class="shot-text">
+          <h3>궁금한 걸 상담 전에, 화면에서 풀기</h3>
+          <p>대출 비교 화면에서 뒤로 가려는 고객에게 "대출 조회 전, 확인하고 싶은 정보가 있으신가요?"라고 먼저 물어요.</p>
+          <ul>
+            <li>다른 곳에서 조회해 봤는지</li>
+            <li>그 결과가 어땠는지</li>
+            <li>무엇이 가장 궁금한지</li>
+          </ul>
+          <p>답에 맞춰 필요한 안내를 바로 보여 줘요. 이탈 리서치에서 찾은 불안을 기획서와 설계 문서로 옮겨 배포까지 이끈 사례로, 목표 지표(다음 단계 클릭률 +15% lift)를 달성했어요.</p>
+          <p class="shot-cap">휴대폰 화면은 실제 배포 화면이에요. 고객 이름은 가렸어요.</p>
+        </div>
+      </div>
+      <a class="flowimg" href="img/survey_flow.webp" target="_blank" rel="noopener"><img src="img/survey_flow.webp" width="1600" height="478" alt="시작 팝업에서 다른 곳 조회 경험, 조회 결과, 확인하고 싶은 정보를 차례로 묻고 맞춤 안내로 이어지는 설문 흐름" loading="lazy"></a>
+      <figcaption>설문 흐름 설계 화면이에요. 누르면 크게 볼 수 있어요. 모두 재직 중인 회사에서 실제로 배포한 화면과 설계 화면이에요.</figcaption>
+    </figure>
   </section>
 
   <section id="plan">
