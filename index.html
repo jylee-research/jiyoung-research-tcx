@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>이지영 · CX 기획 지원 페이지</title>
+<meta name="description" content="토스씨엑스 CX 기획 매니저 지원을 위해 지원자 이지영이 직접 만든 포트폴리오 페이지입니다.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{
+  --bg:#ffffff; --surface:#f9fafb; --line:#e5e8eb; --chip:#f2f4f6;
+  --ink:#191f28; --head:#333d4b; --body:#4e5968; --sub:#8b95a1;
+  --blue:#3182f6; --blue-soft:#e8f3ff;
+  --radius:20px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--body);font-family:Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;font-size:17px;line-height:1.7;word-break:keep-all;overflow-wrap:break-word}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+header.top{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:12px}
+.name{font-weight:700;color:var(--ink);font-size:16px}
+.badge{font-size:12px;color:var(--sub);background:var(--chip);padding:4px 10px;border-radius:999px;white-space:nowrap}
+nav.toc{display:flex;gap:6px;flex-wrap:wrap;margin-top:28px}
+nav.toc a{font-size:14px;color:var(--head);background:var(--chip);padding:6px 12px;border-radius:999px}
+nav.toc a:hover{background:var(--blue-soft);color:var(--blue);text-decoration:none}
+.hero{padding:64px 0 40px}
+.eyebrow{color:var(--blue);font-weight:600;font-size:16px;margin-bottom:12px}
+h1{color:var(--ink);font-size:clamp(30px,5vw,44px);line-height:1.3;font-weight:700;letter-spacing:-.02em}
+.lead{margin-top:20px;font-size:19px}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{color:var(--ink);font-size:clamp(24px,3.6vw,30px);line-height:1.35;font-weight:700;letter-spacing:-.01em}
+h2 + .desc{margin-top:10px;color:var(--sub);font-size:15px}
+h3{color:var(--head);font-size:20px;font-weight:700;margin-bottom:6px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
+.stat{background:var(--surface);border-radius:var(--radius);padding:20px}
+.stat b{display:block;color:var(--blue);font-size:28px;line-height:1.2;font-weight:700;letter-spacing:-.02em}
+.stat span{display:block;margin-top:6px;font-size:14px;line-height:1.5}
+.case-head{margin-top:8px}
+.case-meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
+.chip{font-size:13px;color:var(--head);background:var(--chip);padding:4px 10px;border-radius:8px}
+.steps{margin-top:28px;display:grid;gap:12px}
+.step{display:grid;grid-template-columns:120px 1fr;gap:16px;background:var(--surface);border-radius:var(--radius);padding:22px 24px}
+.step .k{color:var(--blue);font-weight:700;font-size:15px;padding-top:2px}
+.step p + p{margin-top:8px}
+.step ul{padding-left:18px}
+.step li + li{margin-top:4px}
+.step strong{color:var(--ink)}
+.quote{margin-top:24px;padding:20px 24px;border-left:4px solid var(--blue);background:var(--blue-soft);border-radius:0 var(--radius) var(--radius) 0;color:var(--head);font-weight:600}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}
+.card{background:var(--surface);border-radius:var(--radius);padding:24px}
+.card .num{color:var(--blue);font-weight:700;font-size:22px;margin:6px 0 2px}
+.card p{font-size:15px}
+.kinds{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:24px}
+.kind{background:var(--surface);border-radius:var(--radius);padding:20px}
+.kind b{color:var(--ink);font-size:17px}
+.kind p{font-size:15px;margin-top:4px}
+.kind .fix{display:inline-block;margin-top:10px;font-size:13px;color:var(--blue);background:var(--blue-soft);padding:3px 10px;border-radius:8px;font-weight:600}
+.flow{margin-top:24px;display:grid;gap:12px}
+.flow .card h3{font-size:18px}
+.note{margin-top:16px;font-size:14px;color:var(--sub)}
+footer{border-top:1px solid var(--line);padding:40px 0 64px;font-size:14px;color:var(--sub)}
+footer p + p{margin-top:6px}
+footer .contact{font-size:16px;color:var(--head);margin-bottom:16px}
+@media (max-width:640px){
+  body{font-size:16px}
+  .hero{padding:44px 0 28px}
+  .lead{font-size:17px}
+  section{padding:44px 0}
+  .stats,.grid2,.kinds{grid-template-columns:1fr}
+  .step{grid-template-columns:1fr;gap:6px;padding:20px}
+  .badge{font-size:11px}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <span class="name">이지영 · CX 기획</span>
+    <span class="badge">지원자가 직접 만든 페이지예요</span>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <p class="eyebrow">토스씨엑스 CX 기획 매니저 지원</p>
+    <h1>문의를 줄이는 가장 좋은 방법은,<br>문의가 생기는 이유를 없애는 거예요</h1>
+    <p class="lead">핀테크 대출 서비스의 CX팀에서 VOC를 분석하고 고객 경험을 개선하는 리서처예요. 반복되는 문의를 데이터로 쪼개 원인을 찾고, 그 원인을 기능과 정책으로 바꾼 뒤 문의가 실제로 줄었는지까지 확인해 왔어요.</p>
+    <div class="stats">
+      <div class="stat"><b>-48%</b><span>VOC로 제안한 '대출 신청 취소' 기능 출시 전후 같은 4주의 관련 문의</span></div>
+      <div class="stat"><b>-66%</b><span>원인이 몰린 파트너사와 정책을 조정한 뒤 해당 VOC (7월 → 9월)</span></div>
+      <div class="stat"><b>30~50%</b><span>VOC 분류·리포트를 AI로 자동화해 줄인 분석 공수</span></div>
+    </div>
+    <nav class="toc" aria-label="목차">
+      <a href="#case1">사례 1 · 신청 취소 기능</a>
+      <a href="#case2">사례 2 · 파트너사 VOC</a>
+      <a href="#system">운영을 시스템으로</a>
+      <a href="#plan">먼저 해 보고 싶은 것</a>
+      <a href="#how">일하는 방식</a>
+    </nav>
+  </div>
+
+  <section id="case1">
+    <p class="eyebrow">사례 1 · 문제 정의 → 개선 실행 → 효과 검증</p>
+    <h2 class="case-head">"대출 신청을 취소하고 싶어요"<br>매달 반복되던 문의를 기능으로 없앴어요</h2>
+    <div class="case-meta"><span class="chip">핀다 · 2026.09–10</span><span class="chip">VOC 정량화</span><span class="chip">타사 실사용 비교</span><span class="chip">이슈 제기·근거 정리</span><span class="chip">PO·BD·개발·법무 협업</span></div>
+    <div class="steps">
+      <div class="step"><div class="k">문제 발견</div><div><p>데일리 VOC 리포트를 쓰다가 '신청한 대출을 취소하고 싶다', '진행 중인 상품을 지워 달라', '알림을 그만 보내 달라'는 문의가 계속 들어오는 걸 발견했어요. 고객은 "다른 앱에서는 바로 취소된다"고 했어요.</p></div></div>
+      <div class="step"><div class="k">원인 분류</div><div><ul><li>1~9월 VOC를 다시 분류해 신청 취소 문의와, 비슷하게 생긴 '부결 신고·심사 괴리' 문의를 나눠 <strong>매달 꾸준히 반복되는 문의</strong>라는 걸 숫자로 보여 줬어요.</li><li>고객이 말한 타사 3곳에서 직접 대출을 신청하고 취소해 봤어요. 실제로는 금융사에 취소를 보내기보다 <strong>앱 안의 신청 이력을 지우거나 숨기는 방식</strong>에 가까웠어요.</li><li>정리하면, 고객이 원한 건 금융사 취소가 아니라 '내 화면에서 이 신청을 정리하는 것'이었고, 기존의 '부결 신고' 기능은 오히려 "왜 계속 보여 주냐"는 문의를 만들고 있었어요.</li></ul></div></div>
+      <div class="step"><div class="k">개선 실행</div><div><p>VOC 근거와 타사 비교를 묶어 담당 PO에게 이슈를 올리고, 월별 인입 규모를 정리해 과제의 근거로 넘겼어요. PO가 바로 기획서와 화면 흐름을 만들었고, 사업·개발·법무팀이 함께 검토해 기존 '부결 신고'를 <strong>'신청 취소'로 바꾸고</strong> 취소한 상품은 그날 다시 보이지 않게 정리했어요. 이슈를 올린 지 약 2주 만인 10월에 전 대출 업권에 출시됐어요.</p></div></div>
+      <div class="step"><div class="k">효과 검증</div><div><p>출시 전후 <strong>같은 길이(4주)</strong>로 비교했더니 신청 취소 관련 문의가 <strong>48% 줄었어요</strong>. 상담팀에서도 "체감할 정도로 줄었다"는 반응이 나왔어요.</p></div></div>
+      <div class="step"><div class="k">배운 점</div><div><p>문의 하나를 줄이려고 새 기능을 만든 게 아니라, <strong>문의를 만들던 기능을 바꾼 것</strong>이 핵심이었어요. 그 뒤로는 반복 문의를 볼 때 "안내가 부족한가, 기능이 없나, 있는 기능이 문제인가"를 먼저 나눠 봐요.</p></div></div>
+    </div>
+  </section>
+
+  <section id="case2">
+    <p class="eyebrow">사례 2 · 인입 구조 진단 → 정책 조정</p>
+    <h2 class="case-head">불만이 어디에 몰려 있는지 찾으니,<br>고칠 곳이 보였어요</h2>
+    <div class="case-meta"><span class="chip">핀다 · 2026.08–09</span><span class="chip">파트너사별 VOC 전수 분석</span><span class="chip">고객 인터뷰</span><span class="chip">사업팀·파트너사 협업</span></div>
+    <div class="steps">
+      <div class="step"><div class="k">문제 정의</div><div><p>제휴 대출 상품의 조회는 늘었는데, 신청한 사람이 실제 대출까지 가는 비율이 다른 업권의 절반 수준이었어요. 사업팀이 "신청 이후 고객이 무엇을 겪는지" 알고 싶다고 요청했어요.</p></div></div>
+      <div class="step"><div class="k">진단</div><div><ul><li>출시 이후 쌓인 파트너사별 VOC를 전수 분석해 '안내받은 한도와 최종 심사 결과가 다르다'는 불만이 중심이라는 걸 찾았어요.</li><li>고객 인터뷰로 이유를 확인해 심사 전·중·후의 핵심 문제 4가지를 정리했어요.</li><li>후속 분석에서 이 불만의 <strong>약 70%가 한 파트너사에 몰려 있다</strong>는 걸 찾아 사업팀에 전달했어요.</li></ul></div></div>
+      <div class="step"><div class="k">개선 실행</div><div><ul><li>사업팀이 그 파트너사와 협의해 <strong>가승인 한도를 조정</strong>했어요.</li><li>'신청이 완료됐는지 모르겠다'는 문의는 인증 완료 화면에 '접수가 완료되었다'는 안내를 넣는 것으로 이어졌어요.</li><li>파트너사별 이슈 VOC를 정기적으로 전달하는 흐름도 제안했어요.</li></ul></div></div>
+      <div class="step"><div class="k">효과 검증</div><div><p>그 파트너사의 VOC가 7월에서 9월 사이 <strong>66% 줄었어요</strong>. 10월 수치는 상품 점검 기간이 섞여 있어 효과로 세지 않았어요.</p></div></div>
+      <div class="step"><div class="k">배운 점</div><div><p>실행률은 연말 한도 시즌 같은 바깥 요인에 크게 흔들려 이후에도 올라가지 않았어요. 그래서 성과를 볼 때 바깥 영향을 크게 받는 지표만 보지 않고, <strong>고객 경험을 바로 보여 주는 VOC를 선행 지표로 함께 두는 것</strong>이 중요하다는 걸 배웠어요.</p></div></div>
+    </div>
+  </section>
+
+  <section id="system">
+    <h2>개선을 한 번으로 끝내지 않게, 운영을 시스템으로</h2>
+    <p class="desc">공고에서 말한 '선행적인 대응 체계', '운영 개선의 시스템화'에 해당하는 일이에요.</p>
+    <div class="grid2">
+      <div class="card"><h3>프로덕트팀의 언어로 쓰기</h3><div class="num">PRD · 플로우 · 설계 문서</div><p>대출 비교 화면의 이탈을 줄이는 기획에서 부가서비스 연계 화면 흐름과 FE·BE·DB 명세까지 담은 PRD를 직접 썼어요. 사내 경진대회 1위를 했고, 이후 실험 설계 문서로 발전시켜 앱 배포까지 이끌었어요.</p></div>
+      <div class="card"><h3>출시 전 고객 리스크 점검</h3><div class="num">CX Preview SOP</div><p>새 기능이 나온 뒤에야 불편이 드러나는 일을 막으려고, 출시 전에 고객 관점 리스크를 3개 영역 체크리스트로 점검하는 절차를 처음부터 만들었어요. 예상 상담 인입량과 비용도 숫자로 계산해 함께 올려요.</p></div>
+      <div class="card"><h3>팀별 VOC 지표와 대시보드</h3><div class="num">부서별 VOC KPI 정의</div><p>하나뿐이던 VOC 보드를 팀이 실제로 쓰는 지표와 화면에 맞게 다시 설계하고 있어요. CX팀뿐 아니라 제품·개발·그로스·사업팀이 볼 VOC KPI를 정의했어요.</p></div>
+      <div class="card"><h3>VOC 분류·리포트 자동화</h3><div class="num">분석 공수 30~50% 단축</div><p>흩어진 상담 내용을 문의 유형별로 자동 분류·요약하는 기준을 만들고, 데일리 VOC 리포트 작성과 공유를 Claude Code로 자동화했어요.</p></div>
+      <div class="card"><h3>AI 자동상담 도입 테스트</h3><div class="num">문의 유형별 평가</div><p>상담 챗봇 도입을 위해 팀원들과 문의 카테고리를 나눠 채팅 데이터를 쌓고, 유형별 응답을 평가하는 테스트에 참여했어요.</p></div>
+      <div class="card"><h3>VOC를 전사가 보게</h3><div class="num">뉴스레터 열람률 72%</div><p>VOC 뉴스레터의 포맷을 정하고 핵심 이슈 중심으로 큐레이션해, 열람률을 63%에서 72%까지 올렸어요.</p></div>
+      <div class="card"><h3>고객 곁에서</h3><div class="num">보이스피싱 피해 고객 응대</div><p>원치 않는 대출을 받은 고객에게 절차를 안내하고 도울 방법을 함께 찾았어요. 다음 날 고객이 문제가 해결됐다며 감사를 전했고, 사내에서 공개 칭찬을 받았어요.</p></div>
+    </div>
+  </section>
+
+  <section id="plan">
+    <p class="eyebrow">이번 지원을 위해 직접 정리했어요</p>
+    <h2>토스씨엑스에서 먼저 해 보고 싶은 것</h2>
+    <p class="desc">토스씨엑스의 내부 데이터는 알지 못해요. 제가 핀다에서 VOC를 줄일 때 쓴 방식을 일반화한 공개 자료 기반 가설이에요.</p>
+    <h3 style="margin-top:28px">1. 문의를 '왜 생겼나'로 네 갈래로 나누기</h3>
+    <div class="kinds">
+      <div class="kind"><b>몰라서 묻는 문의</b><p>안내가 없거나 찾기 어려워요.</p><span class="fix">FAQ · 화면 문구 · 챗봇</span></div>
+      <div class="kind"><b>할 수 없어서 묻는 문의</b><p>기능이 없어 상담원을 거쳐야 해요.</p><span class="fix">제품 기능</span></div>
+      <div class="kind"><b>기대와 달라서 묻는 문의</b><p>안내받은 것과 결과가 달라요.</p><span class="fix">정책 · 파트너 협의</span></div>
+      <div class="kind"><b>문제가 생겨서 묻는 문의</b><p>오류나 장애가 있었어요.</p><span class="fix">시스템 · 운영 대응</span></div>
+    </div>
+    <div class="flow">
+      <div class="card"><h3>2. 규모 × 반복성 × 바꿀 수 있는 정도로 순서 정하기</h3><p>월 인입량과 리드타임, 같은 원인으로 다시 들어오는 비율, 그리고 문구 수정(빠름)·정책 협의(중간)·기능 개발(느림) 중 어디서 고칠 수 있는지를 함께 봐요. 크고 반복되는데 빨리 고칠 수 있는 것부터 하고, 기능 개발이 필요한 것은 근거를 쌓아 프로덕트팀 과제로 올려요.</p></div>
+      <div class="card"><h3>3. 같은 길이로 전후 비교하고, 옮겨 간 문의까지 확인하기</h3><p>해당 유형 인입량과 SLA·CSAT를 함께 보고, 문의가 줄어든 대신 다른 유형으로 옮겨 가지 않았는지 확인해요.</p></div>
+      <div class="card"><h3>4. 자동화할 문의와 없앨 문의를 나누기</h3><p>'몰라서 묻는 문의'는 챗봇·자동응답 후보로, 유형별 상담 성공률을 보고 자동화를 정해요. '할 수 없어서', '기대와 달라서' 생기는 문의는 자동응답으로 막기보다 원인을 없애는 과제로 넘겨요.</p></div>
+    </div>
+  </section>
+
+  <section id="how">
+    <h2>일하는 방식</h2>
+    <div class="flow">
+      <div class="card"><h3>숫자 뒤의 맥락까지 파고들어요</h3><p>문의 건수가 왜 그렇게 나왔는지 끝까지 확인해요. 기간이나 기준이 섞인 숫자는 원본을 찾아 다시 맞추고, 부풀리지 않아요.</p></div>
+      <div class="card"><h3>공유가 아니라 변화로 끝내요</h3><p>VOC를 전달하는 데서 멈추지 않고, 기능이나 정책이 바뀌고 문의가 줄었는지 확인하는 데까지 챙겨요.</p></div>
+      <div class="card"><h3>직접 써 보고 근거를 붙여요</h3><p>고객이 "다른 앱은 된다"고 하면 직접 신청하고 취소해 봐요. 화면으로 확인한 근거가 있으면 여러 팀을 설득하기가 훨씬 쉬워져요.</p></div>
+    </div>
+    <p class="note">리서치 5년차예요. 핀다 CX팀에는 2025년 6월에 합류해 VOC 분석과 고객 경험 개선을 맡고 있고, 그 전에는 사회조사와 정책 연구에서 설문·인터뷰를 설계하고 분석했어요.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="contact">연락처 · <a href="mailto:eeg.young3@gmail.com">eeg.young3@gmail.com</a></p>
+    <p>이 페이지는 토스씨엑스 CX 기획 매니저 지원을 위해 지원자 이지영이 직접 만들었어요. 토스씨엑스의 공식 페이지가 아니에요.</p>
+    <p>토스씨엑스에 대한 내용은 공개된 채용 공고를 바탕으로 한 가설이에요. 이전 회사의 수치는 비율과 변화율만 담았고, 파트너사 이름은 적지 않았어요.</p>
+  </div>
+</footer>
+</body>
+</html>
